@@ -1,0 +1,726 @@
+html {
+  font-size: 100%;
+  line-height: 1;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100%;
+  color: var(--gray-550);
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  overflow: visible;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+abbr[title] {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  color: #878a8d;
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  overflow: visible;
+  background: transparent;
+  -webkit-appearance: none;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  display: table;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  color: inherit;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+:focus {
+  outline: none;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+:root {
+  --green: #83cc21;
+  --green-100: #4cca00;
+  --yellow: #ffc513;
+  --yellow-light: #fd0;
+  --orange: #fa6239;
+  --blue: #008bff;
+
+  --gray-100: #f7f7f7;
+  --gray-200: #f1f1f1;
+  --gray-250: #ebebeb;
+  --gray-300: #e6e6e6;
+  --gray-400: #999;
+  --gray-500: #484848;
+  --gray-550: #3f3f3f;
+  --gray-600: #333;
+}
+
+html {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.wrapper {
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  .wrapper {
+    width: 960px;
+  }
+
+  .wrapper_padding {
+    padding: 0 10px;
+  }
+
+  :root {
+    --grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    width: 744px;
+  }
+
+  .wrapper_padding {
+    padding: 0 6px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .wrapper_padding {
+    padding: 0 15px;
+  }
+
+  .wrapper_xs-full {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+/* ------ Styles -------*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100%;
+  color: var(--gray-550);
+}
+
+.header {
+  background-color: #313131;
+  background-image: url(../img/header.jpg) no-repeat no-repeat;
+}
+
+.logo__text {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner__btn {
+  display: flex;
+  background-color: orange;
+  color: white;
+  padding: 18px 52px;
+  text-decoration: none;
+  text-transform: initial;
+  border-radius: 20px;
+  position: relative;
+  bottom: 200px;
+}
+
+.header__top-wrap {
+  display: flex;
+  width: 100%;
+  padding-top: 30px;
+  margin-bottom: 64px;
+}
+
+.header__empty,
+.header__logo-wrap,
+.header__btn-wrap {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  flex-grow: 0;
+  background-color: orange;
+  color: rgb(255, 255, 255);
+  margin-bottom: 100px;
+  padding: 18px 52px;
+  text-decoration: none;
+  text-transform: initial;
+  border-radius: 20px;
+}
+
+.logo__text {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.logo__text_yellow {
+  color: #f2a500;
+}
+
+.logo__text_white {
+  color: #fff;
+}
+
+.header__bottom-wrap {
+  text-align: center;
+}
+
+.header__bottom-wrap_link {
+  display: inline-flex;
+  color: white;
+  font-size: 20px;
+  margin-right: 80px;
+}
+
+.banner {
+  color: white;
+  padding-left: 41px;
+}
+
+.banner__title {
+  font-size: 68px;
+  position: relative;
+  top: 350px;
+}
+
+.banner__text {
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+  top: 350px;
+  width: 325px;
+  height: 56px;
+  word-wrap: break-word;
+}
+
+.banner__image {
+  float: right;
+  padding-left: 1000px;
+  /* Сделала хуйню - переделать и понять как, не с помощью Clear
+  попробовать с помощью абсолютного позиционирования*/
+}
+
+.about-company__title {
+  text-align: center;
+  font-size: 68px;
+  color: #ec7f00;
+}
+.about-company__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 29px;
+}
+
+.about-company__img {
+  float: right;
+  margin-bottom: 131px;
+}
+
+.about-company__list_item {
+  padding-bottom: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.about-company__list_item::marker {
+  color: #ec7f00; /* Догадалась, гы */
+}
+
+.title {
+  text-align: center;
+  font-size: 68px;
+  color: #ec7f00;
+  clear: right;
+}
+
+.title__subtitle {
+  text-align: center;
+  font-size: 36px;
+}
+
+.title__subtitle_gray {
+  color: #2d2d2d;
+  font-weight: 600;
+}
+
+.title__subtitle_orange {
+  color: #ec7f00;
+}
+
+.title__text {
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 600;
+  width: 367px;
+  padding: 10px;
+  word-wrap: break-word; /* Не работает, исправить*/
+}
+
+.catalog__b2b {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.catalog__preview {
+  display: inline-block;
+  flex-flow: row nowrap;
+  text-align: center;
+  margin-left: auto;
+}
+
+.catalog__image {
+  display: inline-block;
+  width: 306px;
+  height: 307px;
+  margin: 50px 46px;
+  position: relative;
+  z-index: 2;
+}
+
+.catalog__image:first-child {
+  margin: 50px 20px;
+}
+
+.catalog__image:last-child {
+  padding: 50px 40px 46px 20px;
+}
+
+.catalog__image_table {
+  width: 487px;
+}
+
+.catalog__name {
+  display: table-caption;
+  caption-side: bottom;
+  font-size: 36px;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+}
+
+/*   Понять как объединить свойства для всех блоков в одно не загружая код */
+
+.catalog__background {
+  display: flex;
+  width: 306px;
+  height: 307px;
+  position: absolute;
+  top: 2150px;
+  left: 60px;
+  background-color: #ec7f00;
+  z-index: 1;
+}
+
+.catalog__background_table {
+  left: 630px;
+}
+
+.catalog__background_cupboard {
+  left: 980px;
+}
+
+.catalog__btn {
+  display: flex;
+  margin-left: 600px;
+  flex-grow: 0;
+  background-color: #ec7f00;
+  color: rgb(255, 255, 255);
+  margin-bottom: 100px;
+  padding: 18px 52px;
+  text-decoration: none;
+  text-transform: initial;
+  border-radius: 20px;
+}
+
+.catalog-b2b__background {
+  display: flex;
+  width: 306px;
+  height: 307px;
+  position: absolute;
+  top: 2935px;
+  left: 120px;
+  background-color: #ec7f00;
+  z-index: 1;
+}
+
+.catalog-b2b__background_tables {
+  left: 720px;
+}
+
+.catalog-b2b__background_hangers {
+  left: 1140px;
+}
+
+.catalog-b2b__background_shelves {
+  top: 3450px;
+  left: 430px;
+}
+
+.catalog-b2b__background_bars {
+  top: 3450px;
+  left: 1140px;
+}
+
+.article__points {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 15px;
+  margin-bottom: 150px;
+}
+
+.article__points:nth-child(4n) {
+  max-width: 0;
+}
+
+.article__content {
+  box-sizing: border-box;
+  background-color: #e9e9e9;
+  font-size: 20px;
+  font-weight: 600;
+  width: 319px;
+  height: 390px;
+  line-height: 30px;
+  padding-left: 44px;
+}
+
+.article__title {
+  font-weight: 700;
+}
+
+.section {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  order: 1;
+}
+
+.section__order6 {
+  display: flex;
+  order: 5;
+}
+
+.section__order7 {
+  display: flex;
+  order: 4;
+}
+
+.section__order8 {
+  display: flex; /*                      Упростить код                 */
+  order: 3;
+}
+
+.section__order9 {
+  display: flex;
+  order: 2;
+}
+
+.section__order10 {
+  display: flex;
+  order: 1;
+}
+
+.section__base {
+  vertical-align: top;
+}
+
+.section__base:nth-child(even) {
+  vertical-align: bottom;
+}
+
+.section__numbers {
+  color: #e9e9e9;
+  font-size: 100px;
+  float: left;
+}
+
+.section__content {
+  word-break: break-all;
+  max-width: 119px;
+  margin-right: 80px;
+}
+
+.section__text {
+  color: black;
+}
+
+.section__arrow {
+  color: #e9e9e9; /* Сделaть стрелочки на сайте*/
+}
+
+.button {
+  margin: auto;
+}
+
+.button__claim {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.map {
+  float: right;
+}
+
+.contacts {
+  clear: left;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 40px;
+}
+
+.contacts__title {
+  font-weight: bold;
+}
+
+.contacts__content {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer {
+  background-color: #313131;
+  margin-top: 180px;
+}
+
+.footer__title {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 60px 85px 60px;
+}
+
+.footer__title:first-child {
+  padding-left: 0;
+  padding-left: 67px;
+}
+
+.footer__title:last-child {
+  padding-right: 0;
+}

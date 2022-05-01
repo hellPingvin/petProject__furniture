@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fill the form</title>
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <span class="logo__text logo__text_yellow">Sofa</span>
+      <span class="logo__text logo__text_white">Loft</span>
+    </div>
+
+    <div class="adds">
+      <span class="adds__text">
+        Республика Казахстан, г. Нур-Султан, Ул. Жубанова 34/1
+      </span>
+    </div>
+
+    <div class="content">
+      <h2 class="title">
+        <span class="title__text title__text_yellow">Заполните форму</span>
+        <br />
+        <span class="title__text title__text_black">и мы свяжемся с вами</span>
+      </h2>
+
+      <form action="URL" method="post" class="form">
+        <div class="form__content">
+          <input
+            type="text"
+            name="name"
+            placeholder="Ваше имя"
+            class="form__text"
+          />
+          <br />
+
+          <input
+            type="text"
+            name="phone"
+            placeholder="Ваш телефон"
+            class="form__text"
+          />
+          <br />
+
+          <input
+            type="text"
+            name="email"
+            placeholder="E-mail"
+            class="form__text"
+          />
+          <br />
+
+          <input
+            type="text"
+            name="comment"
+            placeholder="Комментарий"
+            class="form__text form__text_more"
+          />
+          <br />
+        </div>
+
+        <div class="checkbox">
+          <input class="checkbox__custom" type="checkbox" id="consent" />
+          <label class="checkbox__text" for="consent"
+            >Я согласен(на) с политикой конфиденциальности
+          </label>
+        </div>
+      </form>
+
+      <div>
+        <button type="button" class="button">
+          <span>Оставить заявку</span>
+        </button>
+        <!-- не работает кнопка -->
+      </div>
+
+      <figure class="messenger">
+        <img src="img/instagram.jpg" alt="" class="messenger__icon" />
+        <figcaption class="messenger__text">iloftkz</figcaption>
+      </figure>
+
+      <div class="relations">
+        <span class="relations__content">
+          email: iloftkz2021@gmail.com | тел: +7(707) 889-98-50 <br />
+          WhatsApp: +7(707) 889-98-50
+        </span>
+      </div>
+    </div>
+  </body>
+</html>

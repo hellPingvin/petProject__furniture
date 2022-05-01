@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+}
+
+.logo__text {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner__btn {
+  display: flex;
+  background-color: orange;
+  color: white;
+  padding: 18px 52px;
+  text-decoration: none;
+  text-transform: initial;
+  border-radius: 20px;
+  outline: none;
+  position: relative;
+  bottom: 200px;
+}
+
+.header__top-wrap {
+  display: flex;
+  width: 100%;
+  padding-top: 30px;
+  background-color: #313131;
+}
+
+.header__empty,
+.header__logo-wrap,
+.header__btn-wrap {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  flex-grow: 0;
+  background-color: orange;
+  color: rgb(255, 255, 255);
+  margin-bottom: 100px;
+  padding: 18px 52px;
+  text-decoration: none;
+  text-transform: initial;
+  border-radius: 20px;
+}
+
+.logo__text {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.logo__text_yellow {
+  padding-left: 20px;
+  color: #f2a500;
+}
+
+.logo__text_white {
+  color: #fff;
+}
+
+.header__bottom-wrap {
+  text-align: center;
+  margin-top: -64px;
+}
+
+.header__bottom-wrap_link {
+  display: inline-flex;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 80px;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 150px 20px;
+}
+
+.product-list {
+  padding-bottom: 94px;
+}
+
+.product__text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #2d2d2d;
+}
+
+.color-text {
+  text-transform: uppercase;
+  color: orange;
+}
+
+.product__price {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #313131;
+  margin-top: 100px;
+}
+
+.footer__title {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 60px 85px 60px;
+}
+
+.footer__title:first-child {
+  padding-left: 0;
+  padding-left: 67px;
+}
+
+.footer__title:last-child {
+  padding-right: 0;
+}
